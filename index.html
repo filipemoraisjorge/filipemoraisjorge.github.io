@@ -1,1 +1,194 @@
-Hello World
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css''>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css''>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <body id="fjportfolio" data-spy="scroll" data-target=".navbar" data-offset="60">
+  
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" id="nav-toggle-button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand logo-sm" href="#fjportfolio">
+          <span id="logo1">Filipe<span id="logo2">Morais</span>Jorge</p></span>
+      </a>
+   </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#bio">bio</a></li>
+        <li><a href="#portfolio">portfolio</a></li>       
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div id="bio" class="container-fluid text-justify" >
+  <div class="row">
+    <div class="col-md-5 logo">
+      <div id="logo1">Filipe</div>
+      <div id="logo2">Morais</div>
+      <div id="logo1">Jorge</div>
+    </div>
+    <div class="col-md-7" id="bio-text">
+    <p>I'm a Video Editor and Software Developer from Lisbon. I just concluded an intensive Java and JavaScript programming bootcamp at <a target='_blank' href="http://www.academiadecodigo.org">&ltAcademia de Código_&gt</a>.</p>
+    <p>With a 10 years Career in Media, I‘ve worked as director, which made me grow up in an industry where team work is vital. And as video editor my work had the same Pareto principle that coding has, 20% creativity, 80% organization. Through the years I’ve sharpened my eye and I’m now very picky about good design and creative originality.</p>
+    <p>As a kid I played by dismantling the toys and now, as an adult I’m still pretty curious about how things work, I just stopped calling it playing. I like old books, old cheap cameras, new music and new ideas for our society.</p>
+    <p>People tend to say I’m organized and creative, focused and methodical. I tend to say I feel they’re right.
+    </p>
+  </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center" id="portfolio">
+  <h2>portfolio</h2>
+  
+  <div class="row text-center">
+    <div class="col-sm-4 slideanim">
+      <div class="projects">
+        <a href="#proj1" data-toggle="collapse">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ade12613667351.563057ef9d55e.jpg" alt="Videos">
+        </a>
+        <p><strong>My Video Portfolio</strong></p>
+                <a href="#proj1" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-down"></span></a>
+      
+        <div id="proj1" class="collapse proj-info">
+        <p>Guitarist and Lead Vocalist</p>
+        <p>Loves long walks on the beach</p>
+        <p>Member since 1988</p>
+    </div>
+      </div>
+    </div>
+    <div class="col-sm-4 slideanim slideanim">
+      <div class="projects proj-color">
+        <a href="#proj2" data-toggle="collapse">
+        <img src="http://placehold.it/160x100" alt="Java stuff">
+        </a>
+        <p><strong>Java stuff</strong></p>
+                <a href="#proj2" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-down"></span></a>
+           <div id="proj2" class="collapse">
+      <p>Drummer</p>
+      <p>Loves drummin'</p>
+      <p>Member since 1988</p>
+    </div>
+      </div>
+    </div>
+    <div class="col-sm-4 slideanim">
+      <div class="projects proj-color">
+        <a href="#proj3" data-toggle="collapse">
+        <img src="http://placehold.it/160x100" alt="Chris Marker Tribute Page">
+          </a>
+        <p><strong>Chris Marker Tribute Page</strong></p>
+        <a href="#proj3" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-down"></span></a>
+    <div id="proj3" class="collapse">
+      <p>Bass player</p>
+      <p>Loves math</p>
+      <p>Member since 2005</p>
+    </div>
+      </div>
+    </div>
+</div>
+  </div><div class="container-fluid text-center" id="contact">
+  
+  <h2>contact me</h2>
+  <div class="row text-center">
+    <a class="button" href="http://github.com/filipemoraisjorge" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a><a class="button" href="https://pt.linkedin.com/in/filipemoraisjorge
+" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    </div>
+    
+    <div class="row">
+    
+    <div id="googleMap2" class="col-md-3"></div>
+    <div id="googleMap" class="col-md-6"></div>
+    <div id="googleMap3" class="col-md-3"></div>
+  </div>
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(38.7220172,-9.1406541);
+var myCenter2 = new google.maps.LatLng(41.3876513,2.1655223);
+var myCenter3 = new google.maps.LatLng(50.8492298,4.3464511);
+
+function initialize() {
+var mapProp = {
+center:myCenter,
+zoom:13,
+disableDefaultUI:true,
+  disableDoubleClickZoom:true,
+  keyboardShortcuts:false,
+scrollwheel:false,
+draggable:false,
+
+mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  mapProp.center = myCenter2;
+
+var map2 = new google.maps.Map(document.getElementById("googleMap2"),mapProp)
+ ;
+mapProp.center = myCenter3;
+
+  var map3 = new google.maps.Map(document.getElementById("googleMap3"),mapProp);  
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+  </div>  
+    <footer class="container-fluid text-center">
+  <a class="up-arrow" href="#fjportfolio" data-toggle="tooltip" title="to top" class="fj-tooltip">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>made by me</p> 
+</footer>
+    
+</body>
+  <svg class="defs-only">
+  <filter id="monochrome-blue" color-interpolation-filters="sRGB"
+          x="0" y="0" height="100%" width="100%">
+    <feColorMatrix type="matrix"
+      values="1 0 0 0 0
+              0.25 0 0 0 0.75  
+              0 0 0 0 1
+              0 0 0 0.5 0" />
+  </filter>
+      <filter id="monochrome-orange" color-interpolation-filters="sRGB"
+          x="0" y="0" height="100%" width="100%">
+    <feColorMatrix type="matrix"
+      values="0 0 0 0 1
+              0.40 0 0 0 0.60  
+              0.70 0 0 0 0.30
+              0 0 0 0.75 0" />
+  </filter>
+</svg>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
