@@ -1,0 +1,214 @@
+
+@primary:rgba(0,180,255,.5); /*light blue*/
+@secondary:#FFDCBD; /*light orange*/
+@secondary-sat:#FFBB7F; /*light orange saturated*/
+@background:#FFF;
+
+body{
+  font-family: 'Muli', sans-serif;
+  background-color: @background;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: @background;
+    z-index: 9999;
+    border: 0;
+    font-size: 14px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color:@primary !important; /*light blue*/
+    font-weight: 600;
+}
+
+.navbar-nav li a:hover {
+    background-color: @background !important;
+    border-bottom: thick solid @primary;
+    -webkit-transition: border-bottom .1s; /* Safari */
+    transition: border-bottom .1s;
+}
+
+.navbar-nav li.active a {
+    background-color: @background !important;
+    border-bottom: thick solid @secondary; 
+}
+
+.navbar-default .navbar-toggle {
+ 
+   border-color: @primary;
+   border-radius: 0;
+  
+  .icon-bar {
+    background-color: @primary;
+  }
+  
+}
+
+#nav-toggle-button:hover {
+   background-color:@secondary-sat;
+   border-color:   transparent;;
+   border-width: 1px;
+    .icon-bar {
+  
+    background-color: @background;
+      
+  }
+}
+
+
+.container-fluid {
+  padding: 60px;
+ /* border-bottom: thin solid @primary; /*light blue*/
+}
+
+.logo {
+  font-size: 110px;
+  line-height: 65%;
+  margin: 15px 0 60px 0;
+}
+
+.logo-sm {
+  font-size: 30px;
+  opacity: 0;
+ 
+  #logo1 {
+    letter-spacing: -1px;
+  }
+
+  #logo2 {
+   color: @secondary; /*light orange saturated*/
+   letter-spacing: 1px;
+  }
+}
+
+#logo1 {
+  font-weight: 600;
+  color: @primary; /*light blue*/
+  /*opacity: 0.5;*/
+}
+
+#logo2 {
+  color: @secondary; /*light orange*/
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 7px;
+}
+
+#bio {
+    max-width: 1200px;
+    padding: 120px 60px 30px 60px;
+}
+
+.projects {
+    padding: 0 0 15px 0;
+    margin: 30px 0 0 0;
+    /*border: 1px solid @primary; /*light blue*/
+    border-bottom: thin solid @primary; /*light blue*/  
+ 
+    
+    img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+      -webkit-filter: url(#monochrome-blue);
+      filter:  url(#monochrome-blue);
+    }
+  
+    img:hover {
+      -webkit-filter: url(#monochrome-orange);
+      filter:  url(#monochrome-orange);
+    }
+}
+
+.button {
+  color: @background;
+  background-color: @primary; 
+  display:inline-block;
+  width:50px;
+  height:50px;
+  text-align:center;
+  font-size:30px;
+  line-height:48px;
+  
+  &:hover {
+    color: @background;
+    background: @secondary;
+  }
+  
+}
+
+#googleMap {
+    height: 400px; /* Set the height to 400 pixels */
+       -webkit-filter:  brightness(85%) contrast(120%) url(#monochrome-orange); 
+    filter:  brightness(85%) contrast(120%) url(#monochrome-orange); 
+}
+#googleMap2 { 
+    height: 400px; /* Set the height to 400 pixels */
+   -webkit-filter: brightness(85%) contrast(120%) url(#monochrome-blue);
+    filter: brightness(85%) contrast(120%) url(#monochrome-blue); 
+
+}
+  #googleMap3 {
+    height: 400px; /* Set the height to 400 pixels */
+     -webkit-filter: brightness(85%) contrast(120%) url(#monochrome-blue);
+    filter: brightness(85%) contrast(120%) url(#monochrome-blue); 
+}
+
+footer, footer a {
+  color: @primary;
+  
+  a:hover {
+    color: @secondary;
+    text-decoration: none;
+  }
+}
+
+.fj-tooltip + .tooltip > .tooltip-inner {
+  background-color: @primary;
+}
+.fj-tooltip + .tooltip > .tooltip-arrow {
+  border-bottom-color:#f00;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+.defs-only { width: 1px;
+  
+  background-color: #FF0000;
+  
+}
